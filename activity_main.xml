@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/dropdownmenu"
+            android:layout_width="94dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/hatImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/nextButtonHat"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/icons8_forward_64__1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/nextButtonShoes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/icons8_forward_64__1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButtonBottom" />
+
+        <ImageView
+            android:id="@+id/shoesImageView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="192dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextButtonShoes"
+            app:layout_constraintStart_toEndOf="@+id/backButtonShoes"
+            app:layout_constraintTop_toBottomOf="@+id/bottomImageView" />
+
+        <Button
+            android:id="@+id/backButtonShoes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/icons8_back_64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButtonBottom" />
+
+        <Button
+            android:id="@+id/backButtonBottom"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/icons8_back_64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButtonTop" />
+
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/shoesImageView"
+            app:layout_constraintEnd_toStartOf="@+id/nextButtonBottom"
+            app:layout_constraintStart_toEndOf="@+id/backButtonBottom"
+            app:layout_constraintTop_toBottomOf="@+id/topImageView" />
+
+        <Button
+            android:id="@+id/nextButtonBottom"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/icons8_forward_64__1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButtonTop" />
+
+        <ImageView
+            android:id="@+id/topImageView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomImageView"
+            app:layout_constraintEnd_toStartOf="@+id/nextButtonTop"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/backButtonTop"
+            app:layout_constraintTop_toBottomOf="@+id/hatImageView" />
+
+        <Button
+            android:id="@+id/backButtonTop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/icons8_back_64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButtonHat" />
+
+        <Button
+            android:id="@+id/backButtonHat"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/icons8_back_64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hatImageView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/topImageView"
+            app:layout_constraintEnd_toStartOf="@+id/nextButtonHat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/backButtonHat"
+            app:layout_constraintTop_toBottomOf="@+id/dropdownmenu" />
+
+        <Button
+            android:id="@+id/nextButtonTop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/icons8_forward_64__1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButtonHat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <include
+        layout="@layout/new_images"
+        tools:layout_editor_absoluteY="650dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
